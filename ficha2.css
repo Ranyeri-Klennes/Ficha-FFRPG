@@ -1,0 +1,68 @@
+body {
+	background: #19191b;
+	font-family: monospace;
+	color: #2BE7B9;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+/* ======= AJUSTE DOS TÍTULOS DE CAIXA PARA CAIXA ======= */
+p{
+	margin: 2% 1% 0.2%;
+}
+
+/* ======= ALINHAMENTO DOS INPUTS DO ATRIBUTO ======= */
+.alinhaEsquerda{
+	text-align: center;
+}
+
+#btnSalvar{
+	font-weight: bold;
+	text-align: center;
+	font-family: monospace;
+	font-size: 15px;
+	color: #1a1a1e;
+	text-shadow: 1px 1px 1px #11c66d;
+	transition: 0.5s;
+	background-color: #7250d7;
+	margin-bottom: 25px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #11c66d;
+	height: 30px;
+}
+#btnSalvar:hover{
+	background-color: #1a1a1e;
+	color: #7250d7;
+}
+
+/* ======= DISTÂNCIAMENTO NOS INPUTES DAS ESTATÍSTICAS
+PARA ESPAÇAMENTO DE CADA FRANSE ======= */
+.estatisticas{
+		margin: 0.2% 0%;
+		display: list-item;
+}
+
+input, textarea{
+	color: #ffcc31;
+	background: #1a1a1e;
+	letter-spacing: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: calibri light;
+	text-transform: uppercase;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #11c66d;
+	border: 1px solid #7250d7;
+	transition: 0.6s;
+
+}
+
+fieldset, table{
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #7250d7;
+	border: 1px solid #11c66d;
+	margin-bottom: 20px;
+	padding: 15px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
