@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="ficha2.css">
-	<meta name="viewport" content="width=device-width", initial-scale=1-0>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+
 	<title>Ficha FFRPG</title>
+
 </head>
 
 <body>
-	<input type="submit" value="Salvar" id="btnSalvar" onclick="salvar()">
+	<span>ffrpg</span>
+  <!-- PERFIL -->
+  <span>perfil</span>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<label for="nomePersonagem">Nome do Personagem:</label>
+				<input id="nomePersonagem" type="text" maxlength="15" placeholder="nome do personagem">
+			</div>
+			<div class="col">
+				<label for="hp">hp:</label>
+				<input id="hp" type="text" maxlength="4" placeholder="hp"><!-- debitar a cada dano recebido de algum lugar informado -->
+			</div>
+			<div class="col">
+				<label for="mp">mp:</label>
+				<input id="mp" type="text" maxlength="3" placeholder="mp"><!-- debitar/recarregar de acordo com o jogo -->
+			</div>
+			<div class="col">
+				<label for="nivel">nivel:</label>
+				<input id="nivel" type="text" maxlength="2" placeholder="nivel"><!-- passar de nível consequentemente --><!-- o mestre também pode passar o play de nível -->
+			</div>
+			<div class="col">
+				<label for="gin">gin:</label>
+				<input id="gin" type="text" maxlength="10" placeholder="grana"><!-- de acordo com o ganho/perda no jogo -->
+			</div>
+		</div>
+ 	</div>
+	<button type="submit" class="btn">salvar</button>
+  <!-- // PERFIL -->
+  
 
-	<fieldset id="perfil">
-			<legend>PERFIL</legend>
-				Nome do Personagem:<input id="nomePersonagem" name="perfil_nomePersonagem" type="text" size="25" maxlength="15">
-				Hp:<input id="hp" name="perfil_hp" type="text" size="4" maxlength="4"> <!-- debitar a cada dano recebido de algum lugar informado -->
-				Mp:<input id="mp" name="perfil_mp" type="text" size="2" maxlength="3"> <!-- debitar/recarregar de acordo com o jogo -->
-				Nivel:<input id="nivel" type="text" size="1" maxlength="2"> <!-- passar de nível consequentemente --><!-- o mestre também pode passar o play de nível -->
-				Gin:<input id="gin" type="text" size="15" maxlength="10"> <!-- de acordo com o ganho/perda no jogo -->
-		</fieldset>
-
+  <!-- ATRIBUTOS -->
 	<p>ATRIBUTOS</p> <!-- deixar uma info pré-definida de como preencher o campo -->
 	<table id="atributos">
 			<th></th>
@@ -69,6 +95,7 @@
 				<td class="alinhaEsquerda"><input id="espiritoTeste" name="espirito_teste" type="text" size="2" maxlength="3"></td>
 			</tr>
 		</table>
+    <!-- // ATRIBUTOS -->
 
 	<p>ESTATÍSTICAS</p> <!-- valores serão usados -->
 	<fieldset class="estatisticas"> <!-- deixar uma info pré-definida de como preencher o campo -->
@@ -227,6 +254,12 @@
 
 	<p>ANOTAÇÕES</p>
 	<textarea cols="150" rows="25" type="text" id="anotacoes"></textarea>
+
+<!-- JS BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- // JS BOOTSTRAP -->
 
 </body>
 </html>

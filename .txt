@@ -1,0 +1,5 @@
+- LOGIN
+- ESCOLHA DO PERSONAGEM
+- FICHA COMPLETA (depois ir adicionando as ferramentas e características)
+- BTN "SALVAR"
+- REGISTRAR FICHA
