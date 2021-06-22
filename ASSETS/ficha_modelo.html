@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <link rel="stylesheet" href="./CSS/main.css">
+	<title>Ficha FFRPG</title>
+</head>
+<body>
+	<div class="icone-perfil container-fluid">
+		<img src="ffrpg-icon.png" class="img-fluid" alt="icon-frpg">
+	</div>
+
+	<!-- PERFIL -->
+	<span class="titulo-perfil">perfil</span>
+		<div class="borda container-fluid">
+			<div class="row">
+				<div class="col">
+					<label class="container-flex" for="nomePersonagem">Nome do Personagem:</label>
+					<input id="nomePersonagem" type="text" maxlength="15" placeholder="nome do personagem">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="hp">hp:</label>
+					<input id="hp" type="text" maxlength="4" placeholder="hp"><!-- debitar a cada dano recebido de algum lugar informado -->
+				</div>
+				<div class="col">
+					<label for="mp">mp:</label>
+					<input id="mp" type="text" maxlength="3" placeholder="mp"><!-- debitar/recarregar de acordo com o jogo -->
+				</div>
+				<div class="col">
+					<label for="nivel">nivel:</label>
+					<input id="nivel" type="text" maxlength="2" placeholder="nivel"><!-- passar de nível consequentemente --><!-- o mestre também pode passar o play de nível -->
+				</div>
+				<div class="col">
+					<label for="gin">gin:</label>
+					<input id="gin" type="text" maxlength="10" placeholder="grana"><!-- de acordo com o ganho/perda no jogo -->
+				</div>
+				<button type="submit" class="btn d-inline ">salvar</button>
+			</div>
+		</div>
+	<!-- // PERFIL -->
+  
+
+	<!-- ATRIBUTOS & IMAGEM PERFIL --> 
+	<!-- deixar uma info pré-definida de como preencher o campo -->
+	<!-- os valores serão usados -->
+	<div class="container-fluid">
+		<div class="borda row mb-3">
+			<span class="titulo-atributos">atributos</span>
+			<div class="col-md-6">
+				<table class="table-responsive">
+					<th></th>
+					<th class="">Bônus</th>
+					<th class="">Max</th>
+					<th class="">Valor</th>
+					<th class="">Teste</th>
+					<tr>
+						<td>Força:</td>
+						<td class=""><input id="forcaBonus" name="forca_bonus" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="forcaMax" name="forca_max" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="forcaValor" name="forca_valor" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="forcaTeste" name="forca_teste" type="text" size="2" maxlength="3"></td>
+					</tr>
+					<tr>
+						<td>Vitalidade:</td>
+						<td class=""><input id="vitalidadeBonus" name="vitalidade_bonus" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="vitalidadeMax" name="vitalidade_max" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="vitalidadeValor" name="vitalidade_valor" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="vitalidadeTeste" name="vitalidade_teste" type="text" size="2" maxlength="3"></td>
+					</tr>
+					<tr>
+						<td>Agilidade:</td> 
+						<td class=""><input id="agilidadeBonus" name="agilidade_bonus" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="agilidadeMax" name="agilidade_max" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="agilidadeValor" name="agilidade_valor" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="agilidadeTeste" name="agilidade_teste" type="text" size="2" maxlength="3"></td>
+					</tr>
+					<tr>
+						<td>Velocidae:</td> 
+						<td class=""><input id="velocidadeBonus" name="velocidade_bonus" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="velocidadeMax" name="velocidade_max" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="velocidadeValor" name="velocidade_valor" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="velocidadeTeste" name="velocidade_teste" type="text" size="2" maxlength="3"></td>
+					</tr>
+					<tr>
+						<td>Magia:</td> 
+						<td class=""><input id="magiaBonus" name="magia_bonus" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="magiaMax" name="magia_max" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="magiaValor" name="magia_valor" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="magiaTeste" name="magia_teste" type="text" size="2" maxlength="3"></td>
+					</tr>
+					<tr>
+						<td>Espirito:</td>
+						<td class=""><input id="espiritoBonus" name="espirito_bonus" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="espiritoMax" name="espirito_max" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="espiritoValor" name="espirito_valor" type="text" size="2" maxlength="3"></td>
+						<td class=""><input id="espiritoTeste" name="espirito_teste" type="text" size="2" maxlength="3"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="imagem col md-6">
+				<img src="https://i.pinimg.com/originals/d8/af/dd/d8afddeef9e0684b197812316649db19.png" width="250px">
+				<figcaption>
+					nome personagem
+				
+				</figcaption>
+			</div>
+		</div>
+	</div>
+    <!--// ATRIBUTOS & IMAGEM PERFIL --> 
+	
+	
+	<div class="container-fluid">
+		<!-- ESTATISTICAS -->
+		<span class="titulo-estatisticas">estatísticas</span> <!-- valores serão usados -->
+		<div class="col-md-4">
+			<table><!-- deixar uma info pré-definida de como preencher o campo -->
+				<th>informação</th>
+				<th>valor</th>
+				<tr>
+					<td>Bônus de Ataque do Job:</td>
+					<td><input type="text" id="bonusAtaqueJob" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Evasão (EVA):</td>
+					<td><input type="text" id="eva" size="2" maxlength="2"></td>
+				</tr>
+				<tr>
+					<td>Evasão Mágica(EVA M):</td>
+					<td><input type="text" id="estat_eva_m" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Armadura(ARM):</td>
+					<td><input type="text" id="estat_arm" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Armadura Mágica(ARM M):</td>
+					<td><input type="text" id="estat_arm_m" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Precisão(PREC):</td>
+					<td><input type="text" id="estat_prec" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Precisão Mágica(PREC M):</td>
+					<td><input type="text" id="estat_prec_m" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Destreza(DEX):</td>
+					<td><input type="text" id="estat_dex" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Mente(MNT):</td>
+					<td><input type="text" id="estat_mnt" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Experte(EXP):</td>
+					<td><input type="text" id="estat_exp" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Dano de Vida(DV):</td>
+					<td><input type="text" id="estat_dv" size="2" maxlength="3"></td>
+				</tr>
+				<tr>
+					<td>Dano de Magia(DM):</td>
+					<td><input type="text" id="estat_dm" size="2" maxlength="3"></td>
+				</tr>
+			</table>
+		</div>
+		<!--// ESTATISTICAS -->
+		<!-- ARMAS -->
+		<div class="col-md-8"> <!-- valores serão usados -->
+			<span class="titulo-armas">armas</span>
+			<table>
+				<th></th>
+				<th>Nome</th>
+				<th>Perícia</th>
+				<th>Ataque</th>
+				<th>Dano</th>
+				<th>Habilidade</th>
+				<tr>
+					<td>Mão:</td>
+					<td><input type="text" id="atk_nome"></td>
+					<td><input type="text" id="atk_pericia"></td>
+					<td><input type="text" id="atk_ataque"></td>
+					<td><input type="text" id="atk_dano"></td>
+					<td><input type="text" id="atk_habilidade"></td>
+				</tr>
+				<tr>
+					<td>Escudo:</td>
+					<td><input type="text" id="def_nome"></td>
+					<td><input type="text" id="def_pericia"></td>
+					<td><input type="text" id="def_ataque"></td>
+					<td><input type="text" id="def_dano"></td>
+					<td><input type="text" id="def_habilidade"></td>
+				</tr>
+			</table>
+		</div>	
+		<!--// ARMAS -->	
+	</div>
+	
+
+	<table id="armaduras"> <!-- valores serão usados -->
+			<p>ARMADURAS</p>
+			<th></th>
+			<th>Nome</th>
+			<th>Arm</th>
+			<th>Arm.M.</th>
+			<th>Eva.</th>
+			<th>Eva.M.</th>
+			<th>Habilidade</th>
+			<tr>
+				<td>Cabeça:</td>
+				<td><input type="text" id="def_cabeca_nome"></td>
+				<td><input type="text" id="def_cabeca_arm"></td>
+				<td><input type="text" id="def_cabeca_arm_m"></td>
+				<td><input type="text" id="def_cabeca_eva"></td>
+				<td><input type="text" id="def_cabeca_eva_m"></td>
+				<td><input type="text" id="def_cabeca_habilidade"></td>
+			</tr>
+			<tr>
+				<td>Corpo:</td>
+				<td><input type="text" id="def_corpo_nome"></td>
+				<td><input type="text" id="def_corpo_arm"></td>
+				<td><input type="text" id="def_corpo_arm_m"></td>
+				<td><input type="text" id="def_corpo_eva"></td>
+				<td><input type="text" id="def_corpo_eva_m"></td>
+				<td><input type="text" id="def_corpo_habilidade"></td>
+			</tr>
+			<tr>
+				<td>Mãos:</td>
+				<td><input type="text" id="def_maos_nome"></td>
+				<td><input type="text" id="def_maos_arm"></td>
+				<td><input type="text" id="def_maos_arm_m"></td>
+				<td><input type="text" id="def_maos_eva"></td>
+				<td><input type="text" id="def_maos_eva_m"></td>
+				<td><input type="text" id="def_maos_habilidade"></td>
+			</tr>
+			<tr>
+				<td>Acessório 1:</td>
+				<td><input type="text" id="def_aces1_nome"></td>
+				<td><input type="text" id="def_aces1_arm"></td>
+				<td><input type="text" id="def_aces1_arm_m"></td>
+				<td><input type="text" id="def_aces1_eva"></td>
+				<td><input type="text" id="def_aces1_eva_m"></td>
+				<td><input type="text" id="def_aces1_habilidade"></td>
+			</tr>
+			<tr>
+				<td>Acessório 2:</td>
+				<td><input type="text" id="def_aces2_nome"></td>
+				<td><input type="text" id="def_aces2_arm"></td>
+				<td><input type="text" id="def_aces2_arm_m"></td>
+				<td><input type="text" id="def_aces2_eva"></td>
+				<td><input type="text" id="def_aces2_eva_m"></td>
+				<td><input type="text" id="def_aces2_habilidade"></td>
+			</tr>
+		</table>
+
+	<table id="pericias"> <!-- valores serão usados -->
+			<p>PERÍCIAS</p>
+			<tr>
+				<th>Nome</th>
+				<th>Pontos</th>
+				<th>Total</th>
+			</tr>
+			<tr><!-- colocar uma condição aqui para quando adicionar uma pericia logo aparecer mais espaço para adicionar outra -->
+				<td><input type="text" id="peric_nome"></td>
+				<td><input type="text" id="peric_pts"></td>
+				<td><input type="text" id="peric_total"></td>
+			</tr>
+		</table>
+
+	<p>INVENTÁRIOS</p>
+		<textarea cols="50" rows="25" type="text" id="conteudo_inventario"></textarea>
+		<textarea cols="50" rows="25" type="text" id="conteudo_inventario"></textarea>
+
+	<table id="habilidades"> <!--neste label colocar uma condição quando adicionado 1 hab, aparecer 6 campos destes-->
+		<p>HABILIDADES</p>
+		<th>Nome</th>
+		<th>Nível</th>
+		<th>Tipo</th>
+		<th>Mp/Tc</th>
+		<th>Alvo</th>
+		<th>Efeito</th>
+		<tr>
+		<td><input type="text" id="hab_nome"></td>
+		<td><input type="text" id="hab_nivel"></td>
+		<td><input type="text" id="hab_tipo"></td>
+		<td><input type="text" id="hab_mp_tc"></td>
+		<td><input type="text" id="hab_alvo"></td>
+		<td><input type="text" id="hab_efeito"></td>
+		</tr>
+	</table>
+
+	<p>BACKGROUND</p>
+	<textarea cols="150" rows="25" type="text" id="backg">
+		Nome:
+		Data Nascimento:
+		Local de nascimento:
+		Família:
+		Olhos:
+		Cabelo:
+		Peso:
+		Altura:
+		Signo:
+		Tipo sanguíneo:
+		Peculiaridades chaves:
+		Citação:
+		Aparência:
+		Aliados:
+		Inimigos:
+		Objetivo:
+		Resumo backgroun  d:
+	</textarea>
+
+	<p>ANOTAÇÕES</p>
+	<textarea cols="150" rows="25" type="text" id="anotacoes"></textarea>
+
+<!-- JS BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- // JS BOOTSTRAP -->
+
+</body>
+</html>

@@ -1,5 +1,7 @@
 /* @Autor Ranyeri Klennes */
 
-@import url(/customs.css);
-@import url(/config.css);
-@import url(/responsive.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstra\p/4.0.0/css/bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500;700&display=swap');
+@import url(customs.css);
+@import url(config.css);
+@import url(responsive.css);

@@ -1,30 +1,52 @@
 /* @Autor Ranyeri Klennes */
 
-body {
-	background: #19191b;
-	font-family: monospace;
-	color: #2BE7B9;
-	font-size: 15px;
-	letter-spacing: 2px;
+/* *{
+	box-sizing: border-box;
+	padding: 0%;
+	margin: 0%;
+} */
+
+body , html {
+	font-family: 'Roboto Mono', monospace;
+	background: var(--cor1);
+	color: var(--cor-roxo);
+	margin: 1%;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	padding: 0%;
 }
 
-/* ======= AJUSTE DOS TÍTULOS DE CAIXA PARA CAIXA ======= */
-p{
-	margin: 2% 1% 0.2%;
+.icone-perfil{
+	width: 50%;
 }
 
-/* ======= ALINHAMENTO DOS INPUTS DO ATRIBUTO ======= */
-.alinhaEsquerda{
-	text-align: center;
+
+/* BORDA DAS SEÇÕES */
+.borda{
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: .5rem .5rem 1.4rem var(--cor3), -.5rem -.5rem 1.4rem white;
+	margin: 2% 0%;
+	padding: 1%;
 }
 
-#btnSalvar{
+.col{
+	padding: 0;
+}
+
+.titulo {
+	font-family: calibri;
+	color: var(--cor3);
 	font-weight: bold;
-	text-align: center;
-	font-family: monospace;
-	font-size: 15px;
-	color: #1a1a1e;
-	text-shadow: 1px 1px 1px #11c66d;
+	font-size: 2rem;
+	/* margin-bottom: 5%; */
+}
+
+/* BOTÃO SALVAR NO PERFIL */
+.perfil button{
+	/* font-size: 15px; */
+	color: var(--cor-base-escura);
+	text-shadow: 1px 1px 1px var(--cor-verde);
 	transition: 0.5s;
 	background-color: #7250d7;
 	margin-bottom: 25px;
@@ -32,34 +54,26 @@ p{
 	box-shadow: 1px 1px 1px #11c66d;
 	height: 30px;
 }
-#btnSalvar:hover{
-	background-color: #1a1a1e;
-	color: #7250d7;
+.perfil button:hover{
+	background-color: var(--cor-base-escura);
+	color: var(--cor-roxa);
 }
 
-/* ======= DISTÂNCIAMENTO NOS INPUTES DAS ESTATÍSTICAS
-PARA ESPAÇAMENTO DE CADA FRANSE ======= */
-.estatisticas{
-		margin: 0.2% 0%;
-		display: list-item;
-}
-
-input, textarea{
-	color: #ffcc31;
-	background: #1a1a1e;
-	letter-spacing: 2px;
-	font-size: 15px;
-	font-weight: bold;
-	font-family: calibri light;
-	text-transform: uppercase;
+/* TODOS OS IMPUTS */
+input{
+	color: var(--cor-amarelo);
+	background: var(--cor1);
+	text-transform: capitalize;
 	border-radius: 3px;
-	box-shadow: 1px 1px 1px #11c66d;
-	border: 1px solid #7250d7;
-	transition: 0.6s;
-
+	padding: 5px;
+	margin: 2px;
+	border: none;
+	box-shadow:
+	.1rem .1rem 1.4rem var(--cor2),
+	-.1rem -.1rem 1.4rem white;
 }
 
-fieldset, table{
+/* fieldset, table{
 	border-radius: 3px;
 	box-shadow: 1px 1px 1px #7250d7;
 	border: 1px solid #11c66d;
@@ -67,4 +81,4 @@ fieldset, table{
 	padding: 15px;
 	padding-bottom: 20px;
 	box-sizing: border-box;
-}
+} */
