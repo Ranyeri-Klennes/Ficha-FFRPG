@@ -6,7 +6,7 @@
 
 ## 📸 Visão do Projeto
 
-![Demonstração da Ficha de RPG](./ASSETS/imagem-demostrativa-do-projeto.png)
+![Demonstração da Ficha de RPG](./assets/imagem-demostrativa-do-projeto.png)
 
 ---
 
